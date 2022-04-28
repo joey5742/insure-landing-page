@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- This website was created by: Joey S, 04/28/2022 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  
+</head>
+<body>
+  <div id="container">
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="#">HOW WE WORK</a>
+				<a href="#">BLOG</a>
+				<a href="#">ACCOUNT</a>
+				<a class="plans" href="#">VIEW PLANS</a>
+      <img class="mobile-pic" src="images/bg-pattern-mobile-nav.svg" alt="pattern for mobile-nav">
+			</div>
+		
+		</nav>  <!-- End of Mobile Nav -->
+
+    <!-- Use the header area for the website name or logo -->
+		
+		<header id="ffc-logo">
+			<a href="index.html"><img src="images/logo.svg" alt="Insure logo"></a>
+      <a class="menu-icon" onclick="hamburger()">
+				<img class="open" src="images/icon-hamburger.svg" alt="mobile navigation logo">
+        <img class="close" src="images/icon-close.svg" alt="mobile navigation logo">
+			</a>        
+		
+		
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
+			<ul>
+                <li><a href="#">HOW WE WORK</a></li> 
+                <li><a href="#">BLOG</a></li> 
+                <li><a href="#">ACCOUNT</a></li> 
+                <li><a class="plans" href="#">VIEW PLANS</a></li> 
+            </ul>
+		</nav>
+  </header>
+
+    <!-- Hero Images -->
+		<div id = "masterhero">
+    <img class="family-m" src="images/image-intro-mobile.jpg" alt="Picture of Family going for a walk">
+    <img class="family-d" src="images/image-intro-desktop.jpg" alt="Picture of Family going for a walk">
+
+      <!-- Line Pattern to Left within masterhero div -->
+    <img class="lines-left-m" src="images/bg-pattern-intro-left-mobile.svg" alt="Line design pattern for left side of page">
+    <img class="lines-left-d" src="images/bg-pattern-intro-left-desktop.svg" alt="Line design pattern for left side of page">
+
+    <!-- Line Above Humanizing your insurance -->
+    
+    <div class="white-space-d">
+    </div>
+
+    <section>
+    
+      <h1>Humanizing your insurance.</h1>
+
+      <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+      <div class="spacer"></div>
+      <a class="btn" href="#">VIEW PLANS</a>
+      </section>
+
+    <!-- Line Pattern to right within masterhero div -->
+    <img class="lines-right-m" src="images/bg-pattern-intro-right-mobile.svg" alt="Line design pattern for right side of page">
+    <img class="lines-right-d" src="images/bg-pattern-intro-right-desktop.svg" alt="Line design pattern for right side of page"> 
+
+    </div> <!-- End of hero Div -->
+
+        <div id="white-space1">
+          <!-- Line Above We're different -->
+          <div class="white-space1-d">
+          </div>
+        </div>  <!-- End of White Space Div -->
+
+    <!-- We're different section styled with flex-->
+
+		<div id="mid-box">
+
+      <h1 class="diff-h">We’re different</h1>
+
+      <div class="details">
+      <figure class="diff1">
+        <img src="images/icon-snappy-process.svg" alt="Lighting Bolt Icon">
+        <h2>Snappy Process</h2>
+        <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+      </figure>
+
+      <figure class="diff1">
+        <img src="images/icon-affordable-prices.svg" alt="Dollar Sign Icon">
+        <h2>Affordable Prices</h2>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+      </figure>
+
+      <figure class="diff1">
+        <img src="images/icon-people-first.svg" alt="Icon of Person">
+        <h2>People First</h2>
+        <p> Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
+      </figure>
+      </div>  <!-- End of details class div -->
+
+      </div> <!-- End of mid-box div -->
+
+          <div id="white-space2">
+
+         </div>  <!-- End of White-Space3 Div -->
+
+   <!-- How we work section styled with flex--> 
+
+    <div id="how-work">
+
+      <img class="how-work-m" src="images/bg-pattern-how-we-work-mobile.svg" alt="Line design pattern for 'How We Work' section of page">
+      <img class="how-work-d" src="images/bg-pattern-how-we-work-desktop.svg" alt="Line design pattern for 'How We Work' section of page">
+
+      <h1>Find out more about how we work</h1>
+      <a class="btn" href="#">HOW WE WORK</a>
+      
+    </div> <!-- End of how we work div -->
+
+        <div id="white-space3">
+
+        </div>  <!-- End of White-Space3 Div -->
+
+  </div>  <!-- End of Container Div -->
+
+  <!-- Footer Section -->
+
+  <footer>
+  <div id="all-footer">
+    <img class="lines-footer-m" src="images/bg-pattern-footer-mobile.svg" alt="Line design in Footer">
+    <img class="lines-footer-d" src="images/bg-pattern-footer-desktop.svg" alt="Line design in Footer">
+
+
+    <figure class="logo-social">
+      <img class="logo-f" src="images/logo.svg" alt="Insure Logo">
+
+      <div class="social">
+      <a class="social-1" href="#" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+      <a class="social-1" href="#" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
+      <a class="social-1" href="#" target="_blank"><img src="images/icon-pinterest.svg" alt="Pintrest Icon"></a>
+      <a class="social-1" href="#" target="_blank"><img src="images/icon-instagram.svg" alt="Instragram Icon"></a>
+    </div> <!-- End of Social Div -->
+    </figure> 
+
+    <div class="line-f">
+    </div> <!-- End of line-f Div -->
+    
+    <section>
+      <div id="foot-desktop">
+        <figure class="foot-link">
+          <h3>Our company</h3>
+        <ul class="list-f">
+          <li><a href="#" target="_blank">How we work</a></li>
+          <li><a href="#" target="_blank">Why Insure?</a></li>
+          <li><a href="#" target="_blank">Check Price</a></li>
+          <li><a href="#" target="_blank">Reviews</a></li>
+        </ul>
+        </figure>
+
+        <figure class="foot-link">
+          <h3>Help Me</h3>
+          <ul class="list-f">
+            <li><a href="#" target="_blank">FAQ</a></li>
+            <li><a href="#" target="_blank">Terms of Use</a></li>
+            <li><a href="#" target="_blank">Privacy Policy</a></li>
+            <li><a href="#" target="_blank">Cookies</a></li>
+          </ul>
+        </figure>
+
+        <figure class="foot-link">
+          <h3>Contact</h3>
+          <ul class="list-f">
+            <li><a href="#" target="_blank">Sales</a></li>
+            <li><a href="#" target="_blank">Support</a></li>
+            <li><a href="#" target="_blank">Live Chat</a></li>
+          </ul>
+        </figure>
+
+        <figure class="foot-link">
+          <h3>Others</h3>
+          <ul class="list-f">
+            <li><a href="#" target="_blank">Careers</a></li>
+            <li><a href="#" target="_blank">Press</a></li>
+            <li><a href="#" target="_blank">Licenses</a></li>
+          </ul>
+        </figure>
+    </div><!-- End of foot-desktop Div -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor Coded by Joey S.</a>  
+    </div>
+
+  </section>
+</div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

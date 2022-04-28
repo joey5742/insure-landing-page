@@ -1,0 +1,1068 @@
+/*
+Author: Joey S
+Date: 4/28/2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, div, img, ul, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+
+html {
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit; 
+}
+
+
+body {
+    max-width: 100%; 
+    height: auto; 
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR MOBILE SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 699px)  {
+
+.container {
+    max-width: 700px;
+}
+
+.lines-left-d, .desktop, .tablet-desktop, .lines-right-d, .family-d, .how-work-d, .close, .lines-footer-d {
+    display: none; 
+}
+
+/* Style rules for mobile navigation menu */
+
+#menu-links{
+    top: 10%;
+    right:10%;
+    position: absolute;
+    background-color: hsl(270, 9%, 17%); 
+    padding-top: 50px; 
+    padding-bottom: 300px; 
+    padding-right: 100px;
+    padding-left: 100px; 
+    z-index:4;
+}
+
+.mobile-nav a {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700; 
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: 3;
+    padding-bottom: 2%;
+    display: block; 
+}
+
+.mobile-nav a:nth-child(4) {
+    font-size: 1.1em; 
+    margin: 5% -60%;
+    border: 1px solid hsl(0, 0%, 98%);
+
+}
+
+#menu-links > .mobile-pic {
+    position: absolute;
+    /* max-width: 150%;  */
+    bottom: 0%; 
+    right: 0%; 
+    z-index: 5;
+}
+
+/* Style rules for hamburger menu */
+
+
+#ffc-logo {
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-between; 
+    margin: 5%;
+    z-index: 6; 
+}
+
+.menu-icon:hover .open {
+    display: none; 
+}
+
+.menu-icon:hover .close {
+    display:block;
+}
+
+/* Styling for Hero Section */
+
+#masterhero {
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: hsl(256, 26%, 20%);
+    padding-bottom: 500px;
+}
+
+#masterhero .family-m {
+    height: 451px; 
+    z-index:2;
+}
+
+#masterhero .lines-left-m {
+    position: absolute; 
+    left: 0%; 
+    top: 445px; 
+}
+
+#masterhero h1 {
+    position: absolute; 
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400; 
+    color: white; 
+    text-align: center; 
+    font-size: 2.5em; 
+    line-height: 1.1em; 
+    letter-spacing: 0.05em;
+    top: 535px;
+    padding: 0% 7% 5% 7%; 
+}
+
+#masterhero  p {
+    position: absolute; 
+    font-family: 'Karla', sans-serif;
+    font-size: 0.9em; 
+    color: hsl(0, 0%, 94%); 
+    text-align: center; 
+    line-height: 1.65em; 
+    top: 620px;
+    padding: 0% 12% 0% 12%;
+}
+
+.btn {
+    position: absolute; 
+    border: 1px solid white;
+    text-decoration: none; 
+    letter-spacing: 0.25em; 
+    color: white; 
+    font-family: 'Karla', sans-serif;
+    font-size: 0.8em;
+    text-align: center; 
+    padding: 3% 5%; 
+    left: 30%;
+    right: 30%; 
+    top: 800px;  
+}
+
+#masterhero .lines-right-m {
+    position: absolute; 
+    right: 0%; 
+    bottom: -18%; 
+}
+
+/* Styling for "We're Different" section */
+
+#mid-box {
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+    margin-bottom: 15%; 
+}
+
+#mid-box .diff-h {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400; 
+    padding-top: 130px;
+    text-align: center; 
+    font-size: 2.5em; 
+    color:hsl(270, 9%, 17%);
+    margin-bottom: 5%; 
+}
+
+#mid-box .diff-h::before {
+    content: " ";
+    display: block; 
+    width: 35%;
+    height: 0.04em;
+    background-color: hsl(216, 30%, 68%);
+    margin: 0% 0% 10% 32%;
+}
+
+#mid-box .diff1 img {
+    display: block; 
+    width: 17%;
+    height: auto; 
+    margin: 7% auto; 
+}
+
+#mid-box .diff1 h2 {
+    color:hsl(270, 9%, 17%);
+}
+
+#mid-box .diff1 p {
+    color:hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400; 
+    font-size: 0.8em; 
+    line-height: 1.5em; 
+    margin: 5% 17%; 
+}
+
+#how-work {
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: hsl(256, 26%, 20%);
+    padding-top: 60px;
+    padding-bottom: 300px; 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+#how-work .how-work-m {
+    position: absolute;
+    right: 0%; 
+    top: 0%;    
+}
+
+#how-work h1 {
+    position: absolute;
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    text-align: center; 
+    font-size: 2.75em; 
+    line-height: 1.1em; 
+    font-weight: 400; 
+    padding: 4% 7.5% 5% 7.5%; 
+}
+
+#how-work .btn {
+    top: 75%; 
+    left: 25%;
+    right: 25%; 
+}
+
+#white-space3 {
+    position: relative; 
+    background-color: white; 
+    padding-bottom: 150px; 
+}
+
+footer {
+    position: relative;
+    background-color:hsl(0, 0%, 96%);
+    height: 900px;
+}
+
+footer .lines-footer-m {
+    position: absolute; 
+    left: 0;
+    top: 0; 
+}
+
+
+footer .logo-f {
+    display:block;
+    position: absolute; 
+    top: 90px;
+    left: 37%;
+    right: 37%;
+}
+
+footer .social {
+    position: absolute;
+    top: 140px;
+    left: 30%;
+    right: 15%; 
+}
+
+footer .social-1 {
+    padding-right: 8%; 
+}
+
+footer .social-1:nth-child(4) {
+    padding-right: 0; 
+}
+
+footer .line-f {
+    position: absolute; 
+    top: 200px; 
+    left: 20%; 
+    right: 20%; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+}
+
+footer section {
+    display: block; 
+    text-align: center;
+    position: absolute; 
+    top: 210px; 
+    left: 35%; 
+    right: 35%; 
+    font-family: 'Karla', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+}
+
+footer section h3 {
+    color: hsl(216, 30%, 68%);
+    font-size: 0.8em; 
+    margin-top: 25%; 
+}
+
+
+footer section .list-f {
+    margin-top: 20%;
+}
+
+.list-f li {
+    list-style-type: none; 
+    margin-bottom: 5%;
+
+}  
+
+.list-f li a {
+    text-decoration: none; 
+    color: hsl(256, 26%, 20%);
+    font-weight: 700;
+    font-size: 0.75em; 
+}
+
+footer section .attribution {
+    position: absolute; 
+    margin-top: 20%; 
+    left: -100%;
+    right: -100%; 
+}
+
+}
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR TABLET SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+
+.container {
+    min-width: 700px; 
+    max-width: 1100px;
+}
+    
+.mobile-nav, .open, .close, .lines-left-m, .lines-right-m, .family-d, .how-work-m, .mobile-pic, .lines-footer-m {
+    display: none; 
+}
+
+/* Styling of Header and Nav Element */
+
+#ffc-logo {
+    position: relative;
+    background-color: white;
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-between; 
+    padding: 2% 3%;
+    z-index: 4; 
+}
+
+.tablet-desktop ul { 
+    font-family: 'Karla', sans-serif;
+    list-style-type: none; 
+    font-size: 0.9em; 
+      
+}
+
+.tablet-desktop li {
+    display: inline-block;
+    padding-right: 20px;    
+}
+
+.tablet-desktop li a {
+    text-decoration: none;
+    color: hsl(273,4%,51%); 
+    font-weight: 700; 
+}
+
+.tablet-desktop li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.tablet-desktop .plans {
+    border: 2px solid hsl(270, 9%, 17%);
+    color: hsl(270, 9%, 17%);
+    padding: 10px 20px; 
+}
+
+.tablet-desktop .plans:hover {
+    background-color:hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+/* Styling of Hero Section */
+
+#masterhero {
+    position: relative;
+    background-color: hsl(270, 9%, 17%);
+    height: 700px; 
+    max-width: 1100px; 
+}
+
+#masterhero .family-m {
+    position: absolute; 
+    right: 10%;
+    top: 18%;
+    z-index: 2; 
+}
+
+#masterhero .lines-left-d {
+    position: absolute; 
+    top: 70%;
+    left: 0%;
+    z-index: 3;
+}
+
+#masterhero .lines-right-d {
+    position: absolute; 
+    top: -5%;
+    right: 0%; 
+    z-index: 3;
+}
+
+#masterhero .white-space-d {
+    position: absolute; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    top: 15%;
+    left: 7%; 
+    width: 115px; 
+}
+
+#masterhero section {
+    position: absolute;
+    color: hsl(0, 0%, 98%);
+    left: 7%;
+    top: 20%;  
+    right: 62%; 
+    z-index: 4; 
+}
+
+#masterhero section h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.25em;
+    line-height: 0.9; 
+    letter-spacing: 0.05em;
+}
+
+#masterhero section p {
+    padding-top: 10px;
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    line-height: 1.5; 
+    letter-spacing: 0.05em;
+    font-size: 0.8em; 
+}
+
+#masterhero section .spacer {
+    padding: 5px;
+}
+
+#masterhero section .btn {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.05em;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 10px 25px;
+    text-decoration: none; 
+}
+
+#masterhero section .btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(256, 26%, 20%);
+    font-weight: 700; 
+}
+
+/* Whitespace between hero and we're different section */
+
+#white-space1 {
+    position: relative; 
+    background-color: white; 
+    height: 200px; 
+    z-index: 0;
+}
+
+.white-space1-d {
+    position: absolute; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    top: 90%;
+    left: 5%; 
+    width: 115px; 
+}
+
+/* Styling of We're Different section */
+
+#mid-box {
+    position: relative; 
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.diff-h {
+    display: block; 
+    font-family: 'DM Serif Display', serif;
+    color: hsl(270, 9%, 17%);
+    font-size: 2.25em;
+    padding-bottom: 7%; 
+}
+
+.details {
+    display: flex;
+    flex-direction: row;    
+}
+
+.details > figure {
+    flex: 35%; 
+    margin-right: 1.5%;
+}
+
+.details .diff1 img {
+    width: 30%; 
+    padding-bottom: 7%; 
+}
+
+.details .diff1 h2 {
+    color: hsl(270, 9%, 17%);
+}
+
+.details .diff1 p {
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    line-height: 1.5; 
+    font-weight: 400;
+    font-size: 0.8em; 
+}
+
+/* Whitespace between we're different and find out more sections */
+
+#white-space2 {
+    position: relative; 
+    background-color: white; 
+    height: 100px; 
+    z-index: 0;
+}
+
+/* Find out more section styling */
+
+#how-work {
+    position: relative; 
+    width: 80%;
+    height: 250px; 
+    background-color: hsl(270, 9%, 17%);
+    margin: 0 auto; 
+}
+
+#how-work .how-work-d {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+#how-work h1 {
+    position: absolute; 
+    top: 30%;
+    left: 5%; 
+    right: 40%;
+    font-family: 'DM Serif Display', serif;
+    color:hsl(0, 0%, 98%);
+    font-size: 2.25em;
+    line-height: 0.9; 
+    letter-spacing: 0.05em;
+}
+
+#how-work .btn {
+    position: absolute;
+    top: 35%;
+    left: 65%; 
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.05em;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 10px 25px;
+    text-decoration: none; 
+}
+
+#how-work .btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(256, 26%, 20%);
+    font-weight: 700; 
+}
+
+#white-space3 {
+    position: relative; 
+    background-color: white; 
+    height: 100px; 
+    z-index: 0;
+}
+
+/* Footer styling */
+
+
+footer {
+    position: relative;
+    background-color:hsl(0, 0%, 96%);
+    height: 575px;
+    text-transform: uppercase; 
+}
+
+#all-footer .lines-footer-d {
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+#all-footer .logo-social {
+    padding-top: 5%;
+    padding-left: 10%; 
+    display: flex;
+    justify-content:space-between; 
+    flex-direction: row;
+}
+
+#all-footer .logo-social .social {
+    position: absolute; 
+    display: inline-block;
+    left: 75%; 
+    right: 5%; 
+}
+
+#all-footer .logo-social .social-1 {
+    padding-right: 3%;
+}
+
+#all-footer .logo-social .social-1:hover {
+    filter: invert(48%) saturate(50%) hue-rotate(100deg) brightness(50%) contrast(100%);
+}
+
+#all-footer .line-f {
+    position: absolute; 
+    width: 80%; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    left: 10%;
+    padding-top: 3%;
+}
+
+#all-footer section {
+    position: relative; 
+    width: 80%;
+    height: auto; 
+    padding-top: 7%; 
+    padding-left: 10%; 
+}
+
+#all-footer section #foot-desktop {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+footer section h3 {
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    font-weight:700;
+    font-size: 0.9em; 
+}
+
+footer section ul {
+    list-style-type: none; 
+    padding-top: 20%;
+}
+
+footer section li {
+    padding-bottom: 15%; 
+}
+
+footer section a {
+    font-family: 'Karla', sans-serif;
+    color:hsl(270, 9%, 17%);
+    text-decoration: none; 
+    font-weight: 700; 
+    font-size: 0.9em; 
+}
+
+footer section a:hover {
+    text-decoration: underline;
+
+}
+
+footer .attribution {
+    padding-top: 20%;
+}
+}
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR DESKTOP SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1100px), print {
+
+
+.container {
+    max-width: 1440px;
+}
+
+.mobile-nav, .open, .close, .lines-left-m, .lines-right-m, .family-m, .how-work-m, .mobile-pic, .lines-footer-m {
+    display: none; 
+}
+
+/* Styling of Header and Nav Element */
+
+#ffc-logo {
+    position: relative;
+    background-color: white;
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-between; 
+    padding: 2% 5%;
+    z-index: 4; 
+}
+
+.tablet-desktop ul { 
+    font-family: 'Karla', sans-serif;
+    list-style-type: none; 
+      
+}
+
+.tablet-desktop li {
+    display: inline-block;
+    padding-right: 30px;   
+}
+
+.tablet-desktop li a {
+    text-decoration: none;
+    color: hsl(273,4%,51%); 
+    font-weight: 700; 
+}
+
+.tablet-desktop li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.tablet-desktop .plans {
+    border: 2px solid hsl(270, 9%, 17%);
+    color: hsl(270, 9%, 17%);
+    padding: 10px 20px; 
+}
+
+.tablet-desktop .plans:hover {
+    background-color:hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+/* Styling of Hero Section */
+
+#masterhero {
+    position: relative;
+    background-color: hsl(270, 9%, 17%);
+    height: 600px; 
+    max-width: 1440px; 
+}
+
+#masterhero .family-d {
+    position: absolute; 
+    right: 11.5%;
+    top: 18%;
+    z-index: 2; 
+}
+
+#masterhero .lines-left-d {
+    position: absolute; 
+    top: 70%;
+    left: 0%;
+    z-index: 3;
+}
+
+#masterhero .lines-right-d {
+    position: absolute; 
+    top: -11%;
+    right: 0%; 
+    z-index: 3;
+}
+
+#masterhero .white-space-d {
+    position: absolute; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    top: 18%;
+    left: 15%; 
+    width: 115px; 
+}
+
+#masterhero section {
+    position: absolute;
+    color: hsl(0, 0%, 98%);
+    left: 15%;
+    top: 35%;  
+    right: 740px; 
+    z-index: 4; 
+}
+
+#masterhero section h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5em;
+    line-height: 0.9; 
+    letter-spacing: 0.05em;
+}
+
+#masterhero section p {
+    padding-top: 10px;
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    line-height: 1.5; 
+    letter-spacing: 0.05em;
+    font-size: 0.8em; 
+}
+
+#masterhero section .spacer {
+    padding: 10px;
+}
+
+#masterhero section .btn {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.05em;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 10px 25px;
+    text-decoration: none; 
+}
+
+#masterhero section .btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(256, 26%, 20%);
+    font-weight: 700; 
+}
+
+/* Whitespace between hero and we're different section */
+
+#white-space1 {
+    position: relative; 
+    background-color: white; 
+    height: 350px; 
+    z-index: 0;
+}
+
+.white-space1-d {
+    position: absolute; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    top: 90%;
+    left: 10%; 
+    width: 115px; 
+}
+
+/* Styling of We're Different section */
+
+#mid-box {
+    position: relative; 
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.diff-h {
+    display: block; 
+    font-family: 'DM Serif Display', serif;
+    color: hsl(270, 9%, 17%);
+    font-size: 3em;
+    padding-bottom: 7%; 
+}
+
+.details {
+    display: flex;
+    flex-direction: row;    
+}
+
+.details .diff1 {
+    flex: 30%; 
+    margin-right: 2%;
+}
+
+.details .diff1 img {
+    padding-bottom: 7%; 
+}
+
+.details .diff1 h2 {
+    color: hsl(270, 9%, 17%);
+}
+
+.details .diff1 p {
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    line-height: 1.5; 
+    font-weight: 400;
+    font-size: 0.9em; 
+}
+
+/* Whitespace between we're different and find out more sections */
+
+#white-space2 {
+    position: relative; 
+    background-color: white; 
+    height: 100px; 
+    z-index: 0;
+}
+
+#how-work {
+    position: relative; 
+    width: 80%;
+    height: 250px; 
+    background-color: hsl(270, 9%, 17%);
+    margin: 0 auto; 
+}
+
+#how-work .how-work-d {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+#how-work h1 {
+    position: absolute; 
+    top: 30%;
+    left: 6%; 
+    right: 51%;
+    font-family: 'DM Serif Display', serif;
+    color:hsl(0, 0%, 98%);
+    font-size: 3em;
+    line-height: 0.9; 
+    letter-spacing: 0.05em;
+}
+
+#how-work .btn {
+    position: absolute;
+    top: 40%;
+    left: 78%; 
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.05em;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 10px 25px;
+    text-decoration: none; 
+}
+
+#how-work .btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(256, 26%, 20%);
+    font-weight: 700; 
+}
+
+#white-space3 {
+    position: relative; 
+    background-color: white; 
+    height: 100px; 
+    z-index: 0;
+}
+
+/* Footer styling */
+
+footer {
+    position: relative;
+    background-color:hsl(0, 0%, 96%);
+    height: 650px;
+    text-transform: uppercase; 
+}
+
+#all-footer .lines-footer-d {
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+#all-footer .logo-social {
+    padding-top: 5%;
+    padding-left: 10%; 
+    display: flex;
+    justify-content:space-between; 
+    flex-direction: row;
+}
+
+#all-footer .logo-social .social {
+    position: absolute; 
+    display: inline-block;
+    left: 80%; 
+    right: 5%; 
+}
+
+#all-footer .logo-social .social-1 {
+    padding-right: 3%;
+}
+
+#all-footer .logo-social .social-1:hover {
+    filter: invert(48%) saturate(50%) hue-rotate(100deg) brightness(50%) contrast(100%);
+}
+
+#all-footer .line-f {
+    position: absolute; 
+    width: 80%; 
+    border-bottom: 1px solid hsl(216, 30%, 68%);
+    left: 10%;
+    padding-top: 3%;
+}
+
+#all-footer section {
+    position: relative; 
+    width: 80%;
+    height: auto; 
+    padding-top: 7%; 
+    padding-left: 10%; 
+}
+
+#all-footer section #foot-desktop {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+footer section h3 {
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    font-weight:700;
+    font-size: 0.9em; 
+}
+
+footer section ul {
+    list-style-type: none; 
+    padding-top: 20%;
+
+}
+
+footer section li {
+    padding-bottom: 15%; 
+}
+
+footer section a {
+    font-family: 'Karla', sans-serif;
+    color:hsl(270, 9%, 17%);
+    text-decoration: none; 
+    font-weight: 700; 
+    font-size: 0.9em; 
+}
+
+footer section a:hover {
+    text-decoration: underline;
+}
+
+footer .attribution {
+    padding-top: 20%;
+}
+}
+
